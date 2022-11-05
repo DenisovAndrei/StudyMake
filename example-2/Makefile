@@ -12,12 +12,12 @@ all: debug release
 
 debug: $(DEBUG_EXEC)
 
-$(DEBUG_EXEC): hello.cpp
+hello-dbg: hello.cpp
 	g++ $(DEBUG_FLAGS) hello.cpp -o $(DEBUG_EXEC) 
 
 release: $(RELEASE_EXEC)
 
-$(RELEASE_EXEC): hello.cpp
+hello: hello.cpp
 	g++ $(RELEASE_FLAGS) hello.cpp -o $(RELEASE_EXEC)
 
 clean:
